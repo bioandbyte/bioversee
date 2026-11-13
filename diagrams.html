@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Diagrams | Bioverse</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .diagram-page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 20px;
+      color: white;
+    }
+    .diagram-hero {
+      text-align: center;
+      padding: 45px 10px;
+    }
+    .diagram-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .diagram-card {
+      background: #102b40;
+      border: 1px solid #24536a;
+      padding: 24px;
+      border-radius: 16px;
+    }
+    .diagram-card h2 { color: #39d3cc; }
+    .diagram-card svg {
+      display: block;
+      width: 100%;
+      max-height: 200px;
+      margin: 15px auto;
+    }
+    .diagram-card p { line-height: 1.7; }
+    .back-link { color: #39d3cc; }
+  </style>
+</head>
+<body>
+<main class="diagram-page">
+
+  <a class="back-link" href="index.html">← Back to Bioverse Home</a>
+
+  <header class="diagram-hero">
+    <h1>Scientific Diagrams</h1>
+    <p>Explore the beautiful structures and processes of life through biology diagrams.</p>
+  </header>
+
+  <section class="diagram-grid">
+
+    <article class="diagram-card">
+      <h2>Plant Cell</h2>
+      <svg viewBox="0 0 300 190" role="img" aria-label="Simplified plant cell diagram">
+        <rect x="15" y="15" width="270" height="160" rx="30" fill="#174c48" stroke="#39d3cc" stroke-width="7"/>
+        <rect x="30" y="30" width="240" height="130" rx="22" fill="#a3d9a5" opacity=".3"/>
+        <circle cx="75" cy="75" r="22" fill="#9c80cf"/>
+        <rect x="120" y="55" width="100" height="65" rx="12" fill="#58a9d2" opacity=".8"/>
+        <ellipse cx="235" cy="65" rx="16" ry="9" fill="#6bcf85"/>
+        <ellipse cx="230" cy="130" rx="16" ry="9" fill="#6bcf85"/>
+        <text x="75" y="80" text-anchor="middle" font-size="10" fill="white">Nucleus</text>
+        <text x="170" y="90" text-anchor="middle" font-size="11" fill="white">Vacuole</text>
+      </svg>
+      <p>A plant cell contains a cell wall, chloroplasts, nucleus, and large central vacuole.</p>
+    </article>
+
+    <article class="diagram-card">
+      <h2>Animal Cell</h2>
+      <svg viewBox="0 0 300 190" role="img" aria-label="Simplified animal cell diagram">
+        <ellipse cx="150" cy="95" rx="120" ry="75" fill="#245b70" stroke="#39d3cc" stroke-width="5"/>
+        <circle cx="145" cy="95" r="28" fill="#9c80cf"/>
+        <ellipse cx="75" cy="65" rx="20" ry="10" fill="#e8b65c"/>
+        <ellipse cx="215" cy="110" rx="20" ry="10" fill="#e8b65c"/>
+        <circle cx="100" cy="130" r="9" fill="#6bcf85"/>
+        <text x="145" y="99" text-anchor="middle" font-size="11" fill="white">Nucleus</text>
+      </svg>
+      <p>Animal cells have a cell membrane, cytoplasm, nucleus, mitochondria, and other organelles.</p>
+    </article>
+
+    <article class="diagram-card">
+      <h2>Neuron</h2>
+      <svg viewBox="0 0 300 190" role="img" aria-label="Simplified neuron diagram">
+        <circle cx="100" cy="95" r="25" fill="#9c80cf"/>
+        <path d="M78 75 L35 35 M78 90 L25 85 M80 110 L35 150 M100 70 L110 25" stroke="#39d3cc" stroke-width="5" fill="none"/>
+        <path d="M125 95 L275 95" stroke="#e8b65c" stroke-width="7" fill="none"/>
+        <path d="M250 95 L280 65 M250 95 L280 125" stroke="#e8b65c" stroke-width="4" fill="none"/>
+        <text x="100" y="100" text-anchor="middle" font-size="10" fill="white">Cell body</text>
+      </svg>
+      <p>Neurons transmit electrical and chemical signals throughout the nervous system.</p>
+    </article>
+
+    <article class="diagram-card">
+      <h2>Human Respiratory System</h2>
+      <svg viewBox="0 0 300 190" role="img" aria-label="Simplified respiratory system diagram">
+        <path d="M150 15 L150 80" stroke="#e8b65c" stroke-width="12"/>
+        <path d="M150 75 L100 100 M150 75 L200 100" stroke="#39d3cc" stroke-width="7"/>
+        <path d="M100 100 C35 65 35 155 100 165 C130 165 135 115 130 90" fill="#4d9cb5" stroke="#39d3cc" stroke-width="3"/>
+        <path d="M200 100 C265 65 265 155 200 165 C170 165 165 115 170 90" fill="#4d9cb5" stroke="#39d3cc" stroke-width="3"/>
+      </svg>
+      <p>The respiratory system brings oxygen into the lungs and removes carbon dioxide.</p>
+    </article>
+
+  </section>
+
+  <footer style="text-align:center;padding:40px 0;">
+    <p>Bioverse — Explore Life. Understand Science.</p>
+  </footer>
+</main>
+</body>
+</html>
